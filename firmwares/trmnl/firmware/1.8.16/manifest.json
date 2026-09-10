@@ -13,9 +13,8 @@
         {
           "path": "trmnl-1.8.16-reterminal-sticky.bin",
           "offset": 0,
-          "size": 16556032,
-          "sha256": "a7b7af9eae3cca205bc553f594485db2badc5ab7b48b83a4a52d688d9e099ccb",
-          "md5": "cf74a5d39693abdb1bbc5ba39efcaf05"
+          "size": 1716048,
+          "sha256": "a083665f85fae0c3557778d43a54ce23f0e66af329598a52a3253a3b5f4199d3"
         }
       ]
     }
