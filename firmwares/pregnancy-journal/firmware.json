@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "id": "pregnancy-journal",
+  "name": "Pregnancy-Journal",
+  "group": "community",
+  "catalogSection": "community",
+  "category": "tools",
+  "mode": "flash",
+  "status": "stable",
+  "summary": "An offline pregnancy journal for reTerminal Sticky, with pregnancy-week tracking, weight records, and fetal movement counting.",
+  "description": "Pregnancy-Journal is offline pregnancy-tracking firmware for Seeed Studio reTerminal Sticky, a compact magnetic e-paper device. Built on the Sticky Core hardware framework, it provides a pregnancy-week home screen, weight records, fetal movement counting, and settings.",
+  "author": {
+    "name": "孕期手帐"
+  },
+  "origin": {
+    "name": "Pregnancy-Journal",
+    "url": "https://github.com/sky18Dragon/Pregnancy-Journal"
+  },
+  "source": {
+    "url": "https://github.com/sky18Dragon/Pregnancy-Journal",
+    "license": "MIT"
+  },
+  "support": {
+    "url": "https://github.com/sky18Dragon/Pregnancy-Journal/issues"
+  },
+  "compatibility": {
+    "devices": [
+      "reterminal-sticky"
+    ],
+    "notes": "For Seeed Studio reTerminal Sticky with ESP32-S3 and 32MB flash."
+  },
+  "assets": {
+    "preview": "assets/preview.png",
+    "previewAlt": "Pregnancy-Journal firmware running on a Seeed Studio reTerminal Sticky e-paper device."
+  },
+  "flash": {
+    "versions": [
+      {
+        "version": "2.0.0",
+        "channel": "stable",
+        "manifestPath": "firmware/2.0.0/manifest.json"
+      }
+    ],
+    "notes": [
+      {
+        "title": "Device connection",
+        "description": "Connect reTerminal Sticky with a USB data cable and use desktop Chrome or Edge."
+      },
+      {
+        "title": "Installation",
+        "description": "This package is a complete merged Sticky image. Use the erase option when replacing another firmware."
+      }
+    ]
+  }
+}
