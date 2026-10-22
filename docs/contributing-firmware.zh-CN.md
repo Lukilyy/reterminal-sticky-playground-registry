@@ -233,7 +233,7 @@ cp -R firmwares/_template firmwares/my-firmware
 | `name` | 字符串 | 是 | 1–80 字符 | 网站上的卡片标题 |
 | `group` | 字符串 | 是 | `official`、`partner`、`community` | `community` |
 | `catalogSection` | 字符串 | 是 | `official`、`platform`、`community`、`draft` | `community`。`draft` 的卡片不会发布 |
-| `category` | 字符串 | `community` 必填 | `ereader`、`productivity`、`writing`、`personal`、`weather`、`finance`、`tools`、`fun`、`smart-home`、`other` | 决定卡片出现在哪个筛选项下，见下表 |
+| `category` | 字符串 | `community` 必填 | `ereader`、`productivity`、`writing`、`personal`、`health`、`weather`、`finance`、`tools`、`fun`、`smart-home`、`other` | 决定卡片出现在哪个筛选项下，见下表 |
 | `mode` | 字符串 | 是 | `flash`、`external`、`template`、`download` | `flash`（浏览器烧录）。其余模式保留给协调维护的条目 |
 | `status` | 字符串 | 是 | `experimental`、`beta`、`stable` | 项目成熟度，显示为徽标 |
 | `summary` | 字符串 | 是 | 1–140 字符 | 标题下方的一句话 |
@@ -248,6 +248,7 @@ cp -R firmwares/_template firmwares/my-firmware
 | `productivity` | Productivity | 待办、日历、笔记、计时器、工作看板 |
 | `writing` | Writing | 手写或键入笔记、日记与写作工具 |
 | `personal` | Personal | 习惯打卡、礼拜时间、日记、个人提醒 |
+| `health` | Health | 健康、运动、睡眠与健康记录 |
 | `weather` | Weather | 天气、空气质量、潮汐、预报 |
 | `finance` | Finance | 行情、持仓、预算 |
 | `tools` | Tools | 实用工具、计算器、换算、设备诊断 |
@@ -602,7 +603,7 @@ PR 中提交的文件。
 | `firmwares/my-firmware: is missing firmware.json` | 文件没创建或名字不对 | 创建 `firmwares/my-firmware/firmware.json` |
 | `...firmware.json: contains unsupported field "..."` | 出现了字段说明里没有的键 | 删掉或修正拼写 |
 | `...firmware.json.id: must match the directory name "..."` | `id` 与目录名不一致 | 改成一样 |
-| `...firmware.json.category: is required for community firmware entries` | 缺 `category` | 从十个值里选一个 |
+| `...firmware.json.category: is required for community firmware entries` | 缺 `category` | 从十一个值里选一个 |
 | `...firmware.json.author: is required for community firmware` | 缺 `author` | 补上 `author.name` |
 | `...firmware.json.source.license: is required for firmware-only packages` | 仅固件包没写许可证 | 补上 `source.license` |
 | `...firmware.json.build: is required when source.path is provided` | 源码模式缺 `build` | 补上 `build` 对象 |

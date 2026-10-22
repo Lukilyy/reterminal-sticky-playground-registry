@@ -792,6 +792,14 @@ test('rejects a community firmware entry without a category', () => {
   );
   const writingResult = runValidator(root);
   assert.equal(writingResult.status, 0, writingResult.stderr);
+
+  integration.category = 'health';
+  writeFileSync(
+    join(integrationDir, 'firmware.json'),
+    `${JSON.stringify(integration, null, 2)}\n`,
+  );
+  const healthResult = runValidator(root);
+  assert.equal(healthResult.status, 0, healthResult.stderr);
 });
 
 test('rejects an unsupported firmware category', () => {
@@ -808,7 +816,7 @@ test('rejects an unsupported firmware category', () => {
   const result = runValidator(root);
 
   assert.equal(result.status, 1);
-  assert.match(result.stderr, /category: must be one of: ereader, productivity, writing, personal, weather, finance, tools, fun, smart-home/);
+  assert.match(result.stderr, /category: must be one of: ereader, productivity, writing, personal, health, weather, finance, tools, fun, smart-home/);
 });
 
 test('accepts a printable design card with a preview photo', () => {
