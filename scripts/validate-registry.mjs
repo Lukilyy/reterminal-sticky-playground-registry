@@ -33,7 +33,7 @@ const ALLOWED_GROUPS = new Set(['official', 'partner', 'community']);
 const ALLOWED_MODES = new Set(['external', 'template', 'download', 'flash']);
 const ALLOWED_STATUSES = new Set(['experimental', 'beta', 'stable']);
 const ALLOWED_CATALOG_SECTIONS = new Set(['official', 'platform', 'community', 'draft']);
-const ALLOWED_FIRMWARE_CATEGORIES = new Set(['ereader', 'productivity', 'writing', 'personal', 'weather', 'finance', 'tools', 'fun', 'smart-home', 'other']);
+const ALLOWED_FIRMWARE_CATEGORIES = new Set(['ereader', 'productivity', 'writing', 'personal', 'health', 'weather', 'finance', 'tools', 'fun', 'smart-home', 'other']);
 const ALLOWED_PRINTABLE_CATEGORIES = new Set(['case', 'stand', 'mount', 'accessory', 'reference', 'other']);
 // Fields and project marker file each supported build system expects.
 // 每种受支持的编译系统所需的字段,以及用于识别工程的标识文件。
