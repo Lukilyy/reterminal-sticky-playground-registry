@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "sticky-bus-eta",
+  "name": "Bus ETA",
+  "group": "community",
+  "catalogSection": "community",
+  "category": "productivity",
+  "mode": "flash",
+  "status": "experimental",
+  "summary": "Live bus arrivals with on-device station setup and low-power sleep.",
+  "description": "Bus ETA turns reTerminal Sticky into a live bus arrival display. It supports Singapore and Hong Kong bus data, station name or ID setup, configurable refresh intervals, WiFi setup, NTP and RTC clock sync, and automatic low-power sleep. WiFi and station details are configured on the device after flashing.",
+  "author": {
+    "name": "Clair2929",
+    "url": "https://github.com/Clair2929"
+  },
+  "origin": {
+    "name": "Bus ETA Firmware",
+    "url": "https://github.com/Clair2929/reterminal-sticky-bus-eta"
+  },
+  "source": {
+    "url": "https://github.com/Clair2929/reterminal-sticky-bus-eta",
+    "license": "MIT"
+  },
+  "support": {
+    "url": "https://github.com/Clair2929/reterminal-sticky-bus-eta/issues"
+  },
+  "documentationUrl": "https://github.com/Clair2929/reterminal-sticky-bus-eta#readme",
+  "compatibility": {
+    "devices": [
+      "reterminal-sticky"
+    ],
+    "notes": "Tested on reTerminal Sticky with ESP32-S3 using ESP-IDF v5.4. Configure WiFi and bus stop on the device after flashing."
+  },
+  "assets": {
+    "preview": "assets/preview.jpg",
+    "previewAlt": "Bus ETA showing live bus arrivals on reTerminal Sticky"
+  },
+  "tags": [
+    "bus",
+    "transit",
+    "dashboard",
+    "wifi",
+    "low-power"
+  ],
+  "flash": {
+    "versions": [
+      {
+        "version": "1.0.0",
+        "channel": "experimental",
+        "manifestPath": "firmware/1.0.0/manifest.json"
+      }
+    ],
+    "notes": [
+      {
+        "title": "Configure after flashing",
+        "description": "Use the device WiFi page to connect to WiFi, then use Setup to choose the city, station and refresh interval."
+      },
+      {
+        "title": "Wake from sleep",
+        "description": "After one hour without hardware button activity, the device enters low-power sleep. Press the refresh/AI button to wake and refresh the Bus page."
+      }
+    ]
+  }
+}
